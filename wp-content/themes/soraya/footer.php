@@ -34,25 +34,33 @@
 
     </div>
   </section>
- <section class="footer-infos container">
-    <div class="copyright">
-      <p>© <?php echo date('Y'); bloginfo("name"); echo" Tous droits réservés." ?> </p>
-    </div>
-    <div class="social-medias">
-      <nav class="navigation navigation-bottom">
-        <?php
-        wp_nav_menu(
-          array(
-            'theme_location'  => 'footer'
-          )
-        );
-         ?>
 
-      </nav>
-    </div>
-  </section>
-</footer>
-<?php wp_footer(); ?>
+  <section class="footer-infos container">
+     <div class="copyright">
+       <p>
+           © <?php the_time("Y"); ?> <?php bloginfo("name"); ?> . <?php echo get_theme_mod("copyright_text"); ?>
+       </p>
+     </div>
+     <div class="social-medias">
+       <nav class="navigation navigation-bottom">
+         <?php
+         wp_nav_menu(
+           array(
+             'theme_location'  => 'footer'
+           )
+         );
+          ?>
+         <!-- <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Shop</a></li>
+           <li><a href="index.html">Blog</a></li>
+           <li><a href="#">Contact</a></li>
+         </ul> -->
+       </nav>
+     </div>
+   </section>
+ </footer>
+ <?php wp_footer(); ?>
 
-</body>
-</html>
+ </body>
+ </html>

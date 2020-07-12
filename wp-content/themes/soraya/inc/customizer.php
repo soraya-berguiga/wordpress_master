@@ -21,18 +21,18 @@ function soraya_customize_register($wp_customize) {
   );
 
 // AJOUTER NOUVEAU CONTROL CUSTOMIZER
-  $wp_customize->add_control(
-
-    new WP_Customize_Image_control(
-    $wp_customize,
-    'banner_image',
-    array (
-      'label' => 'Image de fond',
-      'section' => 'banner',
-      'setting' => 'banner_image'
-    )
-    )
-  );
+  // $wp_customize->add_control(
+  //
+  //   new WP_Customize_Image_control(
+  //   $wp_customize,
+  //   'banner_image',
+  //   array (
+  //     'label' => 'Image de fond',
+  //     'section' => 'banner',
+  //     'setting' => 'banner_image'
+  //   )
+  //   )
+  // );
   // TODO - En autonomie - Ajouter un nouveau panel (add_panel) au Customizer
   // identifiant : 'front_page'
   // titre : 'Page d\'accueil principale'
